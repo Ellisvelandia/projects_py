@@ -159,7 +159,25 @@ for filename in filenames:
 
 # print(pet_list[0:3])
 
-wardrobe = {'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black']}
-new_items = {'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}
+# wardrobe = {'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black']}
+# new_items = {'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}
 
-print(wardrobe.update(new_items))
+# print(wardrobe.update(new_items))
+
+class Piglet:
+    years = 0
+    def pig_years(self):
+        return self.years * 8
+    def speak(self):
+        print(f"Oink! i'm {self.name}")
+         
+         
+hamlet = Piglet()
+hamlet.name = "Hamlet"
+hamlet.speak()       
+
+piggy = Piglet()
+piggy.name = "Piggy"
+piggy.years = 2
+print(piggy.pig_years())
+        
